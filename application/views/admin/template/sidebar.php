@@ -78,6 +78,6 @@
 					</ul>
 				</li>
 			</ul> <!-- End #main-nav -->	
-		<p style="text-align: right; padding: 5px;">powered by: <a href="http://www.bloo.pt" target="_blank">bloo.pt</a></p>
+		<p style="text-align: right; padding: 5px;">powered by: <a href="http://www.marcomonteiro.pt" target="_blank">Marco Monteiro</a></p>
 		</div>
 	</div> <!-- End #sidebar -->
