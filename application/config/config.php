@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/bloo_admin/';
+$config['base_url']	= 'http://localhost/admin_base/';
 
 /*
 |--------------------------------------------------------------------------
