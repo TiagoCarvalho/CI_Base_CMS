@@ -26,4 +26,4 @@ $lang['db_unable_to_set_charset'] = 'Incapaz de criar uma conecção com este pa
 $lang['db_error_heading'] = 'Ocorreu um erro de base de dados';
 
 /* End of file db_lang.php */
-/* Location: ./system/language/english/db_lang.php */
+/* Location: ./application/language/english/db_lang.php */
