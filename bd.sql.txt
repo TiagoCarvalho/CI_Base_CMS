@@ -56,21 +56,7 @@ CREATE TABLE IF NOT EXISTS `category` (
   `categorydescription` text,
   `categorystatus` enum('active','inactive','deleted') DEFAULT 'active',
   PRIMARY KEY (`idcategory`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
-
---
--- Dumping data for table `category`
---
-
-INSERT INTO `category` (`idcategory`, `categoryname`, `categorydescription`, `categorystatus`) VALUES
-(1, 'categoria 1', 'Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim', 'deleted'),
-(2, 'Categoria 2', '<span style="font-weight: bold;">Isto</span> é uma pequena descrição!', 'deleted'),
-(3, 'Categoria 2', 'isto é uma descrição!aaa', 'deleted'),
-(4, 'cateogia 3', 'outra categoria', 'deleted'),
-(5, 'categoria 3', 'asdasdasd', 'deleted'),
-(6, 'Categoria 1', '<p>asdasdasd</p>', 'deleted'),
-(7, 'categoria 1', '<p>asdasdasd</p>', 'active'),
-(8, 'categforia 2', '<p>asdasdasd</p>', 'deleted');
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -87,14 +73,6 @@ CREATE TABLE IF NOT EXISTS `ci_sessions` (
   PRIMARY KEY (`session_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `ci_sessions`
---
-
-INSERT INTO `ci_sessions` (`session_id`, `ip_address`, `user_agent`, `last_activity`, `user_data`) VALUES
-('05a5aa50ff59f92aa18d8ca92c41848b', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.0) AppleWebKit/534.24 (K', 1305285271, ''),
-('68f4a330d6248a44386bac359b4f7ef3', '127.0.0.1', 'Mozilla/5.0 (Windows NT 6.0; rv:2.0.1) Gecko/20100', 1305881113, 'a:7:{s:5:"email";s:22:"marco.monteiro@bloo.pt";s:8:"username";s:9:"cancerman";s:6:"iduser";s:1:"1";s:4:"name";s:5:"Marco";s:7:"surname";s:8:"Monteiro";s:6:"type_2";s:5:"admin";s:9:"logged_in";b:1;}');
-
 -- --------------------------------------------------------
 
 --
@@ -107,55 +85,7 @@ CREATE TABLE IF NOT EXISTS `files` (
   `filetype` enum('.pdf','.jpg','.jpeg','.png','.gif','.rar','.zip','.txt') DEFAULT NULL,
   `filestatus` enum('active','inactive','deleted') DEFAULT NULL,
   PRIMARY KEY (`idfile`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=43 ;
-
---
--- Dumping data for table `files`
---
-
-INSERT INTO `files` (`idfile`, `filename`, `filetype`, `filestatus`) VALUES
-(1, 'cenas1.jpg', '.jpg', 'deleted'),
-(2, 'cenas2.jpg', '.jpg', 'deleted'),
-(3, 'thumbbb1.jpg', '.jpg', 'deleted'),
-(4, 'dominios.pdf', '.pdf', 'deleted'),
-(5, 'dominios.pdf', '.pdf', 'deleted'),
-(6, 'texto.txt', '.txt', 'deleted'),
-(7, 'texto1.txt', '.txt', 'deleted'),
-(8, 'phpimageeditor.zip', '.zip', 'active'),
-(9, 'Desktop.rar', '.rar', 'active'),
-(10, 'texto2.txt', '.txt', 'deleted'),
-(11, 'termos_e_condicoes.pdf', '.pdf', 'active'),
-(12, 'phpimageeditor1.zip', '.zip', 'active'),
-(13, 'Desktop1.rar', '.rar', 'active'),
-(14, 'texto3.txt', '.txt', 'active'),
-(15, 'termos_e_condicoes1.pdf', '.pdf', 'active'),
-(16, 'texto4.txt', '.txt', 'active'),
-(17, 'mcfilemanager_php_1_6_site.zip', '.zip', 'active'),
-(18, 'texto5.txt', '.txt', 'active'),
-(19, 'termos_e_condicoes2.pdf', '.pdf', 'active'),
-(20, 'thumbbb2.jpg', '.jpg', 'active'),
-(21, 'cenas3.jpg', '.jpg', 'active'),
-(22, 'cenas4.jpg', '.jpg', 'active'),
-(23, 'WALLPAPER-MARCO.jpg', '.jpg', 'active'),
-(24, '', '', 'deleted'),
-(25, 'WALLPAPER-MARCO1.jpg', '.jpg', 'active'),
-(26, 'cenas5.jpg', '.jpg', 'active'),
-(27, 'texto6.txt', '.txt', 'deleted'),
-(28, 'texto7.txt', '.txt', 'active'),
-(29, 'texto8.txt', '.txt', 'active'),
-(30, 'termos_e_condicoes3.pdf', '.pdf', 'active'),
-(31, 'phpimageeditor2.zip', '.zip', 'active'),
-(32, 'termos_e_condicoes4.pdf', '.pdf', 'active'),
-(33, 'mcfilemanager_php_1_6_site1.zip', '.zip', 'active'),
-(34, 'texto9.txt', '.txt', 'active'),
-(35, 'termos_e_condicoes5.pdf', '.pdf', 'active'),
-(36, 'texto10.txt', '.txt', 'active'),
-(37, 'termos_e_condicoes6.pdf', '.pdf', 'active'),
-(38, 'phpimageeditor3.zip', '.zip', 'active'),
-(39, 'termos_e_condicoes7.pdf', '.pdf', 'deleted'),
-(40, 'termos_e_condicoes8.pdf', '.pdf', 'active'),
-(41, '24096.jpg', '.jpg', 'deleted'),
-(42, '240961.jpg', '.jpg', 'active');
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -213,29 +143,4 @@ CREATE TABLE IF NOT EXISTS `users` (
   `type_2` enum('user','super_user','manager','admin') DEFAULT NULL,
   `userstatus` enum('active','inactive','deleted') DEFAULT NULL,
   PRIMARY KEY (`iduser`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=20 ;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`iduser`, `username`, `ec_password`, `email`, `name`, `surname`, `website`, `facebook`, `twitter`, `type_2`, `userstatus`) VALUES
-(1, 'cancerman', '0ac18bc9314b43b13ee16079a0995454', 'marco.monteiro@bloo.pt', 'Marco', 'Monteiro', 'www.marcomonteiro.com', 'marcogmonteiro', 'MarcoMonteir0', 'admin', 'active'),
-(2, 'testes', '1eba757246e3ccaed8314388c2185237', 'asdasd@asdasd.com', 'asdasd', 'asdasd', 'www.marco.com', '', '', 'admin', 'deleted'),
-(3, 'marcomonteiro', 'testestets', 'asdasd@asdasd.com', 'asdasd', 'asdasd', 'www.marco.com', '', '', 'user', 'deleted'),
-(4, 'marcomonteiros', 'xmpd6f', 'asdasd@asdasd.com', 'asdasd', 'asdasds', 'www.marco.com', '', '', 'user', 'deleted'),
-(5, 'ultimo teste', 'a3dcb4d229de6fde0db5686dee47145d', 'asdasd@asdasd.com', 'asdasd', 'asdasdasd', '', '', '', 'user', 'deleted'),
-(6, 'maisum', 'asdasdasd', 'asdasd@asdasd.com', 'asdasd', 'asdasd', '', '', '', 'admin', 'deleted'),
-(7, 'asdasd', 'd41d8cd98f00b204e9800998ecf8427e', 'asdasd@asdasd.coma', 'asdasd', 'asdasd', '', '', '', 'user', 'deleted'),
-(8, 'asdasd', '8c71af9219d05db914b75bf2d57355f3', 'asdasd@asdasd.com', 'asdasd', 'asdasdas', '', '', '', 'user', 'deleted'),
-(9, 'mais um', 'a3dcb4d229de6fde0db5686dee47145d', 'asdasd@asdasd.com', 'asdasdasd', 'asdasdasd', '', '', '', 'user', 'deleted'),
-(10, 'mais outro', 'a3dcb4d229de6fde0db5686dee47145d', 'asdasd@asdasd.com', 'asdasdasdasdasd', 'asdasdasd', '', '', '', 'user', 'deleted'),
-(11, 'mais outro', 'a3dcb4d229de6fde0db5686dee47145d', 'asdasd@asdasd.com', 'asdasdasd', 'asdasdasd', '', '', '', 'user', 'deleted'),
-(12, 'mais outro', 'f67c2bcbfcfa30fccb36f72dca22a817', 'asdasd@asdasd.com', 'asdasdasd', 'asdasdasd', '', '', '', 'user', 'deleted'),
-(13, 'mais outro', 'f67c2bcbfcfa30fccb36f72dca22a817', 'asdasd@asdasd.com', 'asdasdasd', 'asdasdasd', '', '', '', 'user', 'deleted'),
-(14, 'Tiago', '85064efb60a9601805dcea56ec5402f7', 'tiago.carvalho@bloo.pt', 'Tiago', 'Carvalho', 'www.bloo.pt', '', '', 'admin', 'deleted'),
-(15, 'Tiagos', '85064efb60a9601805dcea56ec5402f7', 'tiago.carvalho@bloo.pt', 'Tiagos', 'Carvalho', 'www.bloo.pt', '', '', 'admin', 'deleted'),
-(16, 'carlos', 'dc599a9972fde3045dab59dbd1ae170b', 'carlos.ceia@bloo.pt', 'Carlos', 'Ceia', '', '', '', 'admin', 'deleted'),
-(17, 'helder', 'd41d8cd98f00b204e9800998ecf8427e', 'asdasd@asdasd.com', 'asdasd', 'asdasd', '', '', '', 'user', 'deleted'),
-(18, 'username_new', '0ac18bc9314b43b13ee16079a0995454', 'cenas@cenas.com', 'cenas', 'cenas e tal', NULL, NULL, NULL, 'admin', 'deleted'),
-(19, 'catiavala', '3ba03dd6032bd6766cba8757033c98c8', 'catia.vala@bloo.pt', 'Cátia', 'Vala', '', '', '', 'admin', 'active');
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
