@@ -2,10 +2,12 @@
 
 2 - Edit the config.php file
 
-3 - Edit the database.php file
+3 - Edit the database.php file (default: $db['default']['database'] = 'admin_base';)
 
-4 - Add your use to the database (password should be MD5)
+4 - Create database "admin_base" with SQL script db.sql.txt
 
-5 - Acess your backend at: yourbaseurl.com/index.php/admin/login
+5 - Add your use to the database (password should be MD5)
 
-6 - Have fun! =)
+6 - Acess your backend at: yourbaseurl.com/index.php/admin/login
+
+7 - Have fun! =)
