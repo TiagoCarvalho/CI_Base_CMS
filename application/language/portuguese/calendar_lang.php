@@ -15,7 +15,7 @@ $lang['cal_fri']		= "Sex";
 $lang['cal_sat']		= "Sab";
 $lang['cal_sunday']		= "Domingo";
 $lang['cal_monday']		= "Segunda";
-$lang['cal_tuesday']	= "Terça";
+$lang['cal_tuesday']	= "Terï¿½a";
 $lang['cal_wednesday']	= "Quarta";
 $lang['cal_thursday']	= "Quinta";
 $lang['cal_friday']		= "Sexta";
@@ -41,7 +41,7 @@ $lang['cal_june']		= "Junho";
 $lang['cal_july']		= "Julho";
 $lang['cal_august']		= "Agosto";
 $lang['cal_september']	= "Setembro";
-$lang['cal_october']	= "Outobro";
+$lang['cal_october']	= "Outubro";
 $lang['cal_november']	= "Novembro";
 $lang['cal_december']	= "Dezembro";
 
