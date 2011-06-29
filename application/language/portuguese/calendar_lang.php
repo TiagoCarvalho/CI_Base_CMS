@@ -41,7 +41,7 @@ $lang['cal_june']		= "Junho";
 $lang['cal_july']		= "Julho";
 $lang['cal_august']		= "Agosto";
 $lang['cal_september']	= "Setembro";
-$lang['cal_october']	= "Outubro";
+$lang['cal_october']	= "Outobro";
 $lang['cal_november']	= "Novembro";
 $lang['cal_december']	= "Dezembro";
 
